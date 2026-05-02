@@ -3,8 +3,6 @@ services:
     build: ./app
     container_name: cloudflare-incident-monitor_container
     volumes:
-      - ./app/storage:/app/storage
-      - ./app/log:/app/log
-      - ./app/log
-      - ./app/storage
+      - ./app/src/storage:/app/src/storage
+      - ./app/src/log:/app/src/log
     restart: unless-stopped

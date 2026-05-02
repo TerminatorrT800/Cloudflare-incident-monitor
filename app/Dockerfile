@@ -7,6 +7,4 @@ RUN npm ci --only=production
 
 COPY . .
 
-RUN mkdir -p log storage
-
-CMD ["node", "index.js"]
+CMD ["node", "src/index.js"]

@@ -1,12 +1,15 @@
 const { getIncidents } = require("./services/cloudflare.js");
 const { sendSlackMessage } = require("./services/slack.js");
-const cron = require("node-cron");
+const { CronJob } = require("cron");
 const fs = require("fs");
+const path = require("path");
 
 async function checkForIncidents() {
   try {
     const incidents = await getIncidents();
-    const storedIncidents = JSON.parse(fs.readFileSync("./storage/incidents.json", "utf-8"));
+    const storedIncidents = JSON.parse(
+      fs.readFileSync(path.join(__dirname, "./storage/incidents.json"), "utf-8"),
+    );
     const storedIncidentIds = storedIncidents.map((incident) => incident.id);
     console.log("Stored Incidents:", storedIncidentIds);
     if (incidents.length > 0) {
@@ -58,14 +61,14 @@ async function checkForIncidents() {
 
           if (newUpdates.length == 0) {
             fs.appendFileSync(
-              "./log/incidentLogs.txt",
+              path.join(__dirname, "./log/incidentLogs.txt"),
               `${new Date()} No new updates for incident: ${incident.name}\n\n`,
             );
           } else {
             for (const update of newUpdates) {
               try {
                 fs.appendFileSync(
-                  "./log/incidentLogs.txt",
+                  path.join(__dirname, "./log/incidentLogs.txt"),
                   `${new Date()} New update for incident ${incident.name}: ${JSON.stringify(update)}\n\n`,
                 );
               } catch (error) {
@@ -78,14 +81,14 @@ async function checkForIncidents() {
 
       if (newIncidents.length == 0) {
         fs.appendFileSync(
-          "./log/incidentLogs.txt",
+          path.join(__dirname, "./log/incidentLogs.txt"),
           `${new Date()} No new incidents\n\n`,
         );
       } else {
         for (const incident of newIncidents) {
           try {
             fs.appendFileSync(
-              "./log/incidentLogs.txt",
+              path.join(__dirname, "./log/incidentLogs.txt"),
               `${new Date()} New incident ${incident.name}: ${JSON.stringify(incident)}\n\n`,
             );
           } catch (error) {
@@ -95,12 +98,12 @@ async function checkForIncidents() {
       }
 
       fs.writeFileSync(
-        "./storage/incidents.json",
+        path.join(__dirname, "./storage/incidents.json"),
         JSON.stringify(incidents, null, 2),
       );
     } else {
       fs.appendFileSync(
-        "./log/incidentLogs.txt",
+        path.join(__dirname, "./log/incidentLogs.txt"),
         `\n\n${new Date()} No active incidents at the moment.\n\n`,
       );
     }
@@ -124,7 +127,7 @@ function formatIsoDate(isoString) {
   });
 }
 
-cron.schedule("*/5 * * * *", () => {
+new CronJob("*/1 * * * *", () => {
   console.log("Checking for incidents...");
   checkForIncidents();
-});
+}, null, true);
