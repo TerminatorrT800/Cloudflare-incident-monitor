@@ -1,0 +1,60 @@
+[
+  {
+    "id": "yhp2dw512p4b",
+    "name": "Cloudflare Access processing delayed audit logs",
+    "status": "monitoring",
+    "impact": "minor",
+    "createdAt": "2026-04-29T19:19:06.595Z",
+    "resolvedAt": null,
+    "incidentUpdates": [
+      {
+        "id": "4b789bj4kcsx",
+        "status": "monitoring",
+        "body": "We are continuing to monitor for any further issues.",
+        "createdAt": "2026-05-01T22:32:57.470Z"
+      },
+      {
+        "id": "dr7mp7tv2fwr",
+        "status": "monitoring",
+        "body": "Cloudflare Access is currently processing a backlog of audit logs from April 28, 17:00 UTC through April 29, 19:00 UTC. We expect this processing to continue through the weekend and will provide our next update on Monday. Please be assured that all Access services remain fully operational and no log data has been lost.",
+        "createdAt": "2026-04-29T20:15:36.695Z"
+      },
+      {
+        "id": "5h6v0x2ncmw8",
+        "status": "monitoring",
+        "body": "All logging data was preserved; no data was lost. We continue to populate the delayed logs.",
+        "createdAt": "2026-04-29T20:15:30.667Z"
+      },
+      {
+        "id": "8zlcqmfvs7y2",
+        "status": "monitoring",
+        "body": "A fix has been implemented and we are monitoring the results.",
+        "createdAt": "2026-04-29T20:10:39.426Z"
+      },
+      {
+        "id": "nv1f3s97gr7k",
+        "status": "identified",
+        "body": "A fix has been implemented. \nNew audit logs will appear without delay. We are working to resolve the delayed logs.",
+        "createdAt": "2026-04-29T19:56:55.445Z"
+      },
+      {
+        "id": "sxxnbxsk6c4b",
+        "status": "identified",
+        "body": "The issue has been identified and a fix is being implemented.",
+        "createdAt": "2026-04-29T19:33:46.380Z"
+      },
+      {
+        "id": "fq1s3hcnc966",
+        "status": "investigating",
+        "body": "We are continuing to investigate this issue.",
+        "createdAt": "2026-04-29T19:22:31.465Z"
+      },
+      {
+        "id": "0pw6fy6h9f41",
+        "status": "investigating",
+        "body": "Cloudflare is investigating issues with delayed Access authentication logs.",
+        "createdAt": "2026-04-29T19:19:06.695Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "cloudflare-maintenance-monitor",
+  "version": "1.0.0",
+  "description": "Middleware used for parsing Cloudflare incident API to Slack WebHook",
+  "license": "ISC",
+  "author": "T800",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cron": "^4.4.0",
+    "dotenv": "^16.3.1",
+    "node-cron": "^4.2.1"
+  }
+}

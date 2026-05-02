@@ -1,0 +1,96 @@
+Sat May 02 2026 05:14:27 GMT-0600 (Central Standard Time) New update for incident Cloudflare Access processing delayed audit logs: {"id":"dr7mp7tv2fwr","status":"monitoring","body":"Cloudflare Access is currently processing a backlog of audit logs from April 28, 17:00 UTC through April 29, 19:00 UTC. We expect this processing to continue through the weekend and will provide our next update on Monday. Please be assured that all Access services remain fully operational and no log data has been lost.","createdAt":"2026-04-29T20:15:36.695Z"}
+
+Sat May 02 2026 05:17:04 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:17:04 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Page Rules Unexpected Behaviour
+
+Sat May 02 2026 05:22:55 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:22:55 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Page Rules Unexpected Behaviour
+
+Sat May 02 2026 05:22:55 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 05:30:12 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:30:12 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Page Rules Unexpected Behaviour
+
+Sat May 02 2026 05:30:12 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 05:33:25 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:33:25 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Page Rules Unexpected Behaviour
+
+Sat May 02 2026 05:33:25 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 05:34:32 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:34:32 GMT-0600 (Central Standard Time) New incident Cloudflare Page Rules Unexpected Behaviour: {"id":"bcmh7z6rb6t2","name":"Cloudflare Page Rules Unexpected Behaviour","status":"identified","impact":"minor","createdAt":"2026-05-01T10:53:56.619Z","resolvedAt":null,"incidentUpdates":[{"id":"t5q5bmw880gn","status":"identified","body":"The issue has been identified and a fix is being implemented.","createdAt":"2026-05-01T11:05:12.027Z"},{"id":"kqqw3x6gl076","status":"investigating","body":"Cloudflare is investigating issues with Page Rules which cause HTTP redirects not triggering when expected on worker subrequests. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.","createdAt":"2026-05-01T10:53:56.709Z"}]}
+
+Sat May 02 2026 05:35:28 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:35:28 GMT-0600 (Central Standard Time) New update for incident Cloudflare Page Rules Unexpected Behaviour: {"id":"kqqw3x6gl076","status":"investigating","body":"Cloudflare is investigating issues with Page Rules which cause HTTP redirects not triggering when expected on worker subrequests. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.","createdAt":"2026-05-01T10:53:56.709Z"}
+
+Sat May 02 2026 05:35:28 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 05:36:02 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:36:02 GMT-0600 (Central Standard Time) New update for incident Cloudflare Page Rules Unexpected Behaviour: {"id":"kqqw3x6gl076","status":"investigating","body":"Cloudflare is investigating issues with Page Rules which cause HTTP redirects not triggering when expected on worker subrequests. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.","createdAt":"2026-05-01T10:53:56.709Z"}
+
+Sat May 02 2026 05:36:02 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 05:41:04 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:41:04 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Page Rules Unexpected Behaviour
+
+Sat May 02 2026 05:41:04 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 05:41:16 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:41:16 GMT-0600 (Central Standard Time) New update for incident Cloudflare Page Rules Unexpected Behaviour: {"id":"t5q5bmw880gn","status":"identified","body":"The issue has been identified and a fix is being implemented.","createdAt":"2026-05-01T11:05:12.027Z"}
+
+Sat May 02 2026 05:41:16 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 05:47:35 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:47:35 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Page Rules Unexpected Behaviour
+
+Sat May 02 2026 05:47:35 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 05:47:48 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:47:48 GMT-0600 (Central Standard Time) New incident Cloudflare Page Rules Unexpected Behaviour: {"id":"bcmh7z6rb6t2","name":"Cloudflare Page Rules Unexpected Behaviour","status":"identified","impact":"minor","createdAt":"2026-05-01T10:53:56.619Z","resolvedAt":null,"incidentUpdates":[{"id":"t5q5bmw880gn","status":"identified","body":"The issue has been identified and a fix is being implemented.","createdAt":"2026-05-01T11:05:12.027Z"},{"id":"kqqw3x6gl076","status":"investigating","body":"Cloudflare is investigating issues with Page Rules which cause HTTP redirects not triggering when expected on worker subrequests. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.","createdAt":"2026-05-01T10:53:56.709Z"}]}
+
+Sat May 02 2026 05:48:39 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 05:48:40 GMT-0600 (Central Standard Time) New incident Cloudflare Page Rules Unexpected Behaviour: {"id":"bcmh7z6rb6t2","name":"Cloudflare Page Rules Unexpected Behaviour","status":"identified","impact":"minor","createdAt":"2026-05-01T10:53:56.619Z","resolvedAt":null,"incidentUpdates":[{"id":"kqqw3x6gl076","status":"investigating","body":"Cloudflare is investigating issues with Page Rules which cause HTTP redirects not triggering when expected on worker subrequests. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.","createdAt":"2026-05-01T10:53:56.709Z"},{"id":"t5q5bmw880gn","status":"identified","body":"The issue has been identified and a fix is being implemented.","createdAt":"2026-05-01T11:05:12.027Z"}]}
+
+Sat May 02 2026 06:16:09 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 06:16:09 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Page Rules Unexpected Behaviour
+
+Sat May 02 2026 06:16:09 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 06:16:48 GMT-0600 (Central Standard Time) New update for incident Cloudflare Access processing delayed audit logs: {"id":"4b789bj4kcsx","status":"monitoring","body":"We are continuing to monitor for any further issues.","createdAt":"2026-05-01T22:32:57.470Z"}
+
+Sat May 02 2026 06:16:49 GMT-0600 (Central Standard Time) New incident Cloudflare Page Rules Unexpected Behaviour: {"id":"bcmh7z6rb6t2","name":"Cloudflare Page Rules Unexpected Behaviour","status":"identified","impact":"minor","createdAt":"2026-05-01T10:53:56.619Z","resolvedAt":null,"incidentUpdates":[{"id":"kqqw3x6gl076","status":"investigating","body":"Cloudflare is investigating issues with Page Rules which cause HTTP redirects not triggering when expected on worker subrequests. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.","createdAt":"2026-05-01T10:53:56.709Z"},{"id":"t5q5bmw880gn","status":"identified","body":"The issue has been identified and a fix is being implemented.","createdAt":"2026-05-01T11:05:12.027Z"}]}
+
+Sat May 02 2026 06:18:55 GMT-0600 (Central Standard Time) New update for incident Cloudflare Access processing delayed audit logs: {"id":"4b789bj4kcsx","status":"monitoring","body":"We are continuing to monitor for any further issues.","createdAt":"2026-05-01T22:32:57.470Z"}
+
+Sat May 02 2026 06:18:56 GMT-0600 (Central Standard Time) New incident Cloudflare Page Rules Unexpected Behaviour: {"id":"bcmh7z6rb6t2","name":"Cloudflare Page Rules Unexpected Behaviour","status":"identified","impact":"minor","createdAt":"2026-05-01T10:53:56.619Z","resolvedAt":null,"incidentUpdates":[{"id":"kqqw3x6gl076","status":"investigating","body":"Cloudflare is investigating issues with Page Rules which cause HTTP redirects not triggering when expected on worker subrequests. We are working to understand the full impact and mitigate this problem. More updates to follow shortly.","createdAt":"2026-05-01T10:53:56.709Z"},{"id":"t5q5bmw880gn","status":"identified","body":"The issue has been identified and a fix is being implemented.","createdAt":"2026-05-01T11:05:12.027Z"}]}
+
+Sat May 02 2026 14:30:00 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 14:30:00 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 14:35:00 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 14:35:00 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 14:40:00 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 14:40:00 GMT-0600 (Central Standard Time) No new incidents
+
+Sat May 02 2026 14:45:00 GMT-0600 (Central Standard Time) No new updates for incident: Cloudflare Access processing delayed audit logs
+
+Sat May 02 2026 14:45:00 GMT-0600 (Central Standard Time) No new incidents
+
