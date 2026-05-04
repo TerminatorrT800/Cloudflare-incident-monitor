@@ -4,14 +4,33 @@ const { CronJob } = require("cron");
 const fs = require("fs");
 const path = require("path");
 
+const storagePath = path.join(__dirname, "./storage/incidents.json");
+const defaultPath = path.join(__dirname, "./incidents.default.json");
+
+function loadStoredIncidents() {
+  if (fs.existsSync(storagePath)) {
+    return JSON.parse(fs.readFileSync(storagePath, "utf-8"));
+  }
+
+  fs.mkdirSync(path.dirname(storagePath), { recursive: true });
+
+  if (fs.existsSync(defaultPath)) {
+    fs.copyFileSync(defaultPath, storagePath);
+    return JSON.parse(fs.readFileSync(storagePath, "utf-8"));
+  }
+
+  fs.writeFileSync(storagePath, JSON.stringify([]));
+  return [];
+}
+
 async function checkForIncidents() {
   try {
     const incidents = await getIncidents();
-    const storedIncidents = JSON.parse(
-      fs.readFileSync(path.join(__dirname, "./storage/incidents.json"), "utf-8"),
-    );
+    const storedIncidents = loadStoredIncidents();
     const storedIncidentIds = storedIncidents.map((incident) => incident.id);
+
     console.log("Stored Incidents:", storedIncidentIds);
+
     if (incidents.length > 0) {
       let newIncidents = [];
 
@@ -41,11 +60,11 @@ async function checkForIncidents() {
           const storedUpdates = storedIncidents.filter(
             (storedIncident) => storedIncident.id == incident.id,
           )[0].incidentUpdates;
-          const sotredUpdateIds = storedUpdates.map((update) => update.id);
+          const storedUpdateIds = storedUpdates.map((update) => update.id);
           let newUpdates = [];
 
           for (const incidentUpdate of incident.incidentUpdates) {
-            if (!sotredUpdateIds.includes(incidentUpdate.id)) {
+            if (!storedUpdateIds.includes(incidentUpdate.id)) {
               newUpdates.push(incidentUpdate);
               storedUpdates.push(incidentUpdate);
 
@@ -97,18 +116,13 @@ async function checkForIncidents() {
         }
       }
 
-      fs.writeFileSync(
-        path.join(__dirname, "./storage/incidents.json"),
-        JSON.stringify(incidents, null, 2),
-      );
+      fs.writeFileSync(storagePath, JSON.stringify(incidents, null, 2));
     } else {
       fs.appendFileSync(
         path.join(__dirname, "./log/incidentLogs.txt"),
         `\n\n${new Date()} No active incidents at the moment.\n\n`,
       );
     }
-
-    //console.log(incidents);
   } catch (error) {
     console.error("Error fetching incidents:", error);
   }
