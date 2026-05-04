@@ -140,9 +140,15 @@ function formatIsoDate(isoString) {
   });
 }
 
+
+async function main() {
+  
 console.log("Checking for incidents...");
-checkForIncidents().then(() => {
-  console.log("Current incidents.json:", fs.readFileSync(storagePath, "utf-8"));
-  console.log("Done.");
-  process.exit(0);
-})
+await checkForIncidents();
+await console.log("Current incidents.json:", fs.readFileSync(storagePath, "utf-8"));
+await console.log("Done.");
+process.exit(0);
+}
+
+
+main()
