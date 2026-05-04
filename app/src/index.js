@@ -142,6 +142,7 @@ function formatIsoDate(isoString) {
 
 console.log("Checking for incidents...");
 checkForIncidents().then(() => {
+  console.log("Current incidents.json:", fs.readFileSync(storagePath, "utf-8"));
   console.log("Done.");
   process.exit(0);
 })
