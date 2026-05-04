@@ -1,6 +1,5 @@
 const { getIncidents } = require("./services/cloudflare.js");
 const { sendSlackMessage } = require("./services/slack.js");
-const { CronJob } = require("cron");
 const fs = require("fs");
 const path = require("path");
 
@@ -141,7 +140,8 @@ function formatIsoDate(isoString) {
   });
 }
 
-new CronJob("*/1 * * * *", () => {
-  console.log("Checking for incidents...");
-  checkForIncidents();
-}, null, true);
+console.log("Checking for incidents...");
+checkForIncidents().then(() => {
+  console.log("Done.");
+  process.exit(0);
+})
