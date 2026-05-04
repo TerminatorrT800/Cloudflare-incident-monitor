@@ -145,7 +145,7 @@ async function main() {
   
 console.log("Checking for incidents...");
 await checkForIncidents();
-await console.log("Current incidents.json:", fs.readFileSync(storagePath, "utf-8"));
+await console.log("Current incidents.json:",loadStoredIncidents());
 await console.log("Done.");
 process.exit(0);
 }
