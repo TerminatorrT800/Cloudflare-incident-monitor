@@ -8,12 +8,6 @@
     "resolvedAt": null,
     "incidentUpdates": [
       {
-        "id": "4b789bj4kcsx",
-        "status": "monitoring",
-        "body": "We are continuing to monitor for any further issues.",
-        "createdAt": "2026-05-01T22:32:57.470Z"
-      },
-      {
         "id": "dr7mp7tv2fwr",
         "status": "monitoring",
         "body": "Cloudflare Access is currently processing a backlog of audit logs from April 28, 17:00 UTC through April 29, 19:00 UTC. We expect this processing to continue through the weekend and will provide our next update on Monday. Please be assured that all Access services remain fully operational and no log data has been lost.",
