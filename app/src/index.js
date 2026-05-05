@@ -127,7 +127,9 @@ function formatIsoDate(isoString) {
   });
 }
 
-new CronJob("*/1 * * * *", () => {
-  console.log("Checking for incidents...");
-  checkForIncidents();
-}, null, true);
+// new CronJob("*/1 * * * *", () => {
+//   console.log("Checking for incidents...");
+//   checkForIncidents();
+// }, null, true);
+
+checkForIncidents();

@@ -1,5 +1,27 @@
 [
   {
+    "id": "xlh20wf0hd70",
+    "name": "Bot Management Issues",
+    "status": "identified",
+    "impact": "minor",
+    "createdAt": "2026-05-05T08:04:41.960Z",
+    "resolvedAt": null,
+    "incidentUpdates": [
+      {
+        "id": "phm1kqkqypz0",
+        "status": "identified",
+        "body": "The issue has been identified and a fix is being implemented.",
+        "createdAt": "2026-05-05T09:17:42.484Z"
+      },
+      {
+        "id": "nkm2815q1735",
+        "status": "investigating",
+        "body": "Cloudflare is investigating issues with our Bot Management feature. Customers may experience an unexpected increase in Bot Management rules matching detection IDs 50331648 and 50331649.\n\nWe are working to mitigate this problem. More updates to follow shortly.",
+        "createdAt": "2026-05-05T08:04:42.052Z"
+      }
+    ]
+  },
+  {
     "id": "yhp2dw512p4b",
     "name": "Cloudflare Access processing delayed audit logs",
     "status": "monitoring",
@@ -7,6 +29,12 @@
     "createdAt": "2026-04-29T19:19:06.595Z",
     "resolvedAt": null,
     "incidentUpdates": [
+      {
+        "id": "nm84hbxx4y6z",
+        "status": "monitoring",
+        "body": "Cloudflare engineering is continuing to run a process that is ingesting the missing logs. No data was lost and new log collection post incident are unaffected.",
+        "createdAt": "2026-05-04T22:02:51.321Z"
+      },
       {
         "id": "4b789bj4kcsx",
         "status": "monitoring",
