@@ -111,6 +111,10 @@ async function checkForIncidents() {
     //console.log(incidents);
   } catch (error) {
     console.error("Error fetching incidents:", error);
+    fs.appendFileSync(
+      path.join(__dirname, "./log/incidentLogs.txt"),
+      `${new Date()} ERROR: Failed to fetch incidents - ${error.message}\n\n`,
+    );
   }
 }
 
